@@ -1,2 +1,6 @@
 .pytest_cache/
 pkgLavanya/__pycache__/
+build/
+dist/
+myenv/
+pkgLavanya.egg-info/
