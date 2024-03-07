@@ -3,7 +3,7 @@ import re
 from .config import patterns
 
 # Path to the file containing data to be checked
-#file_path = "/home/user1/Desktop/pkgLavanya/pkgLavanya/data.txt"
+#file_path = "/home/user1/Desktop/sensitive_data_guard/sensitive_data_gaurd/data.txt"
 
 
 # Specify the directory and file name
