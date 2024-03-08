@@ -1,6 +1,6 @@
 import os
 import re
-from .config import patterns
+from config import patterns
 
 # Path to the file containing data to be checked
 #file_path = "/home/user1/Desktop/pkgLavanya/pkgLavanya/data.txt"
@@ -14,7 +14,7 @@ filename = 'data.txt'
 file_path = os.path.join(directory, filename)
 
 # Print the generated file path
-print("Generated File Path:", file_path)
+#print("Generated File Path:", file_path)
 
 def find_pattern(input_string):
     """

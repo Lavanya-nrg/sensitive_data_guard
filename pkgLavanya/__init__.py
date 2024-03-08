@@ -1,1 +1,1 @@
-from .detect_info import find_pattern
+#from .detect_info import op_gen

@@ -1,8 +1,47 @@
+# .pytest_cache/
+# pkgLavanya/__pycache__/
+# dist/
+# myenv/
+# /pkgLavanya.egg-info
+# __pycache__/
+# dist/
+# myenv/
+# MANIFEST.in
+# __init__.py 
+# setup.py 
+# # pkgLavanya.egg-info/PKG-INFO
+# # pkgLavanya.egg-info/SOURCES.txt 
+# pkgLavanya/__init__.py
+# # pkgLavanya.egg-info/SOURCES.txt
+# # pkgLavanya.egg-info/PKG-INFO
+# build/lib/pkgLavanya/__init__.py
+# build/lib/pkgLavanya/detect_info.py
+# build/lib/pkgLavanya/config.py
+# build/lib/pkgLavanya/test_detect.py
+
+# Ignore pytest cache
 .pytest_cache/
-pkgLavanya/__pycache__/
-build/
+
+# Ignore compiled Python files
+__pycache__/
+
+# Ignore distribution files
 dist/
+
+# Ignore virtual environment
 myenv/
-pkgLavanya.egg-info/
+
+# Ignore egg-info directory
+*.egg-info/
+
+# Ignore build directory
 build/
-dist/
+
+# Ignore compiled Python files
+__pycache__/
+
+# Ignore MANIFEST.in file
+MANIFEST.in
+__init__.py
+
+setup.py 
