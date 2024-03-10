@@ -3,14 +3,13 @@
 This repository contains a utility package designed to detect sensitive information and secrets in given content, particularly within text files. The utility takes either a file path or content as a string input and returns True if any sensitive information or secrets are found, otherwise, it returns False. The detection is based on configurable patterns specified in a separate configuration file included in the utility package.
 Features
 
+Pattern Detection: The utility employs configurable patterns to identify sensitive information and secrets. Common examples of patterns include strings starting with SECRET_, ending with _KEY, _PASSWORD, and other variations.
 
-    Pattern Detection: The utility employs configurable patterns to identify sensitive information and secrets. Common examples of patterns include strings starting with SECRET_, ending with _KEY, _PASSWORD, and other variations.
+Flexible Input: Accepts either a file path or content as a string, providing flexibility in usage.
 
-    Flexible Input: Accepts either a file path or content as a string, providing flexibility in usage.
+Test Cases: The repository includes a set of test cases using pytest to demonstrate the effectiveness of the utility. These tests can be executed to validate the correctness of the utility.
 
-    Test Cases: The repository includes a set of test cases using pytest to demonstrate the effectiveness of the utility. These tests can be executed to validate the correctness of the utility.
-
-    Code Hygiene: The codebase adheres to coding standards, and we use tools like black or similar code scanning tools to maintain code hygiene. Pre-commit hooks are set up to automatically format the code before each commit.
+Code Hygiene: The codebase adheres to coding standards, and we use tools like black or similar code scanning tools to maintain code hygiene. Pre-commit hooks are set up to automatically format the code before each commit.
 
 
 
