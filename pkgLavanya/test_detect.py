@@ -5,6 +5,7 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from detect_info import find_pattern
 
+
 def test_sensitive_info():
     """Test if the function correctly detects sensitive information."""
     example_string = "String contains Username"

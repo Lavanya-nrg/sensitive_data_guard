@@ -1,0 +1,37 @@
+name: Publish Package
+
+on:
+  # push:
+  #   branches:
+  #     - main
+  workflow_dispatch:
+    inputs:
+      new_version:
+        description: 'Enter the new version number'
+        required: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+    - name: Install dependencies
+      run: pip install twine
+    - name : Install wheel package
+      run: pip install wheel
+    - name: Update version number
+      env:
+        PACKAGE_NAME: pkgLavanya
+        NEW_VERSION: ${{ github.event.inputs.new_version }}
+      run: sed -i "s/__version__ = \".*\"/__version__ = \"$NEW_VERSION\"/" $PACKAGE_NAME/version.py
+    - name: Build package
+      run: python setup.py sdist bdist_wheel
+    - name: Publish package
+      env:
+        TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+      run: twine upload --skip-existing dist/*
