@@ -1,14 +1,8 @@
-## Sensitive Data Guard Utility
-## Overview
-
-This repository contains a utility package designed to detect sensitive information or secrets in a given text content. The utility takes a text file as input, either specified by path or content as a string, and returns true or false based on the detection of any sensitive information.
-Usage
-
-
 ## Sensitive Information Detection Utility
 
 This repository contains a utility package designed to detect sensitive information and secrets in given content, particularly within text files. The utility takes either a file path or content as a string input and returns True if any sensitive information or secrets are found, otherwise, it returns False. The detection is based on configurable patterns specified in a separate configuration file included in the utility package.
 Features
+
 
     Pattern Detection: The utility employs configurable patterns to identify sensitive information and secrets. Common examples of patterns include strings starting with SECRET_, ending with _KEY, _PASSWORD, and other variations.
 
@@ -17,6 +11,8 @@ Features
     Test Cases: The repository includes a set of test cases using pytest to demonstrate the effectiveness of the utility. These tests can be executed to validate the correctness of the utility.
 
     Code Hygiene: The codebase adheres to coding standards, and we use tools like black or similar code scanning tools to maintain code hygiene. Pre-commit hooks are set up to automatically format the code before each commit.
+
+
 
 ### To use the utility, follow these steps:
 
