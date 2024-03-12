@@ -40,4 +40,4 @@ jobs:
       env:
         TWINE_USERNAME: __token__
         TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
-      run: twine upload --skip-existing $PACKAGE_NAME/dist/*
+      run: twine upload --skip-existing $pkgLavanya/dist/*
