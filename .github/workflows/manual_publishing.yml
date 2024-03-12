@@ -1,9 +1,9 @@
 name: Publish Package
 
 on:
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - master
   workflow_dispatch:
     inputs:
       new_version:
@@ -33,5 +33,6 @@ jobs:
       run: python setup.py sdist bdist_wheel
     - name: Publish package
       env:
+        TWINE_USERNAME: __token__
         TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
       run: twine upload --skip-existing dist/*
