@@ -66,7 +66,7 @@ jobs:
      run: pip install wheel
    - name: Update version number
      env:
-       PACKAGE_NAME: src
+       PACKAGE_NAME: pkgLavanya
        NEW_VERSION: ${{ github.event.inputs.new_version }}
      run: sed -i "s#__version__ = \".*\"#__version__ = \"$NEW_VERSION\"#" $PACKAGE_NAME/version.py
    - name: Build package
