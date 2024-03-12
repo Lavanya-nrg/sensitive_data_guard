@@ -43,7 +43,7 @@ name: Publish Package
 on:
  push:
    branches:
-     - fixes
+     - master
  workflow_dispatch:
    inputs:
      new_version:
