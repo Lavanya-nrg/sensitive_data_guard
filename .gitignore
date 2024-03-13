@@ -43,5 +43,3 @@ __pycache__/
 # Ignore MANIFEST.in file
 MANIFEST.in
 __init__.py
-
-setup.py 
