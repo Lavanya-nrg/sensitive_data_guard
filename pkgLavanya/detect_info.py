@@ -1,20 +1,21 @@
 import os
 import re
-from .config import patterns
+from config import patterns
 
 # Path to the file containing data to be checked
-#file_path = "/home/user1/Desktop/pkgLavanya/pkgLavanya/data.txt"
+# file_path = "/home/user1/Desktop/pkgLavanya/pkgLavanya/data.txt"
 
 
 # Specify the directory and file name
-directory = '/home/user1/Desktop/pkgLavanya/pkgLavanya'
-filename = 'data.txt'
+directory = "/home/user1/Desktop/pkgLavanya/sensitiveInfo"
+filename = "data.txt"
 
 # Combine the directory and filename to create a file path
 file_path = os.path.join(directory, filename)
 
 # Print the generated file path
-print("Generated File Path:", file_path)
+# print("Generated File Path:", file_path)
+
 
 def find_pattern(input_string):
     """
@@ -36,6 +37,7 @@ def find_pattern(input_string):
         if not matched:
             matched = False  # Reset the flag for the next line
     return matched
+
 
 # Open the file and read its content
 with open(file_path) as file:

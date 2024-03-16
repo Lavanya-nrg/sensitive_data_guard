@@ -1,1 +1,0 @@
-from .detect_info import find_pattern
